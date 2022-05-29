@@ -877,7 +877,7 @@ img {
 .footer-modal {
     display: flex;
     margin-left: 93px;
-    /* justify-content: end; */
+
 
 }
 
@@ -910,7 +910,8 @@ img {
     outline: none;
 }
 
-.footer-modal-input:hover {
+.footer-modal-input:hover,
+.footer-modal-input:focus {
     border-color: var(--bt-cl);
 }
 
