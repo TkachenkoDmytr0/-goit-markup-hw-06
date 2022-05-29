@@ -335,7 +335,11 @@ img {
     margin-bottom: 12px;
 }
 
-/*  */
+/*
+============================
+         backdrop форма
+============================
+ */
 .modal-label {
     position: relative;
     display: flex;
@@ -349,6 +353,10 @@ img {
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: var(--paragraf-color);
+}
+
+.modal-label:hover .modal-icon-input {
+    fill: var(--bt-cl);
 }
 
 .modal-input {
@@ -899,14 +907,14 @@ img {
     color: var(--background-cl-body);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
 }
 
-.footer-modal-input:hover,
-.footer-modal-input:focus {
+.footer-modal-input:hover {
     border-color: var(--bt-cl);
 }
 
-.footer-modal-input:focus-within {
+.footer-modal-label:focus-within+.footer-modal-input {
     border-color: var(--bt-cl);
 }
 
