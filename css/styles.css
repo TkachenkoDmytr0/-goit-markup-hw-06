@@ -388,6 +388,36 @@ img {
 
 }
 
+.proba {
+    position: absolute;
+    color: red;
+    bottom: -17px;
+    right: 5px;
+    opacity: 0;
+}
+
+.proba2 {
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: red;
+    bottom: -17px;
+    right: 5px;
+    opacity: 0;
+}
+
+.modal-input:focus~.proba2 {
+    opacity: 1;
+}
+
+.modal-input:valid~.proba2 {
+    opacity: 0;
+}
+
 .modal-label.comment {
     margin-bottom: 20px;
 }
