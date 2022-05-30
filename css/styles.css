@@ -417,7 +417,7 @@ img {
     opacity: 1;
 }
 
-.modal-input:not(:placeholder-shown)~.warning {
+.modal-input:valid~.warning {
     opacity: 0;
 }
 
