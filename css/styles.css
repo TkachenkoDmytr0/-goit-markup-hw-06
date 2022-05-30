@@ -253,13 +253,17 @@ img {
     padding-right: 32px;
     margin-left: auto;
     margin-right: auto;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 1s cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .hero-bt:hover,
 .hero-bt:focus {
     background: var(--bt-cl-secondary);
+    border-radius: 50%;
 }
+
+
 
 /*
 ============================
