@@ -358,7 +358,6 @@ img {
 
 .modal-label:hover .modal-icon-input {
     fill: var(--bt-cl);
-    border-color: var(--bt-cl);
 }
 
 .modal-input {
@@ -370,23 +369,17 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-label:hover .modal-input,
+.modal-input:focus {
+    border-color: var(--bt-cl);
+}
+
 .modal-icon-input {
     position: absolute;
     bottom: 10px;
     left: 12px;
     fill: var(--text-black-cl);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
-
-.modal-icon-input:hover+.modal-label {
-    fill: var(--bt-cl);
-    border-color: var(--bt-cl);
-}
-
-.modal-input:hover,
-.modal-input:focus {
-    border-color: var(--bt-cl);
-
 }
 
 .modal-input:focus-within+.modal-icon-input {
